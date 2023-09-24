@@ -30,6 +30,15 @@ p {
     cursive;
 }
 
+a {
+  text-decoration: none;
+  color: #b367d7;
+}
+
+a:hover {
+  color: #943bbd;
+  text-decoration: underline;
+}
 
 
 .item-indicator {
