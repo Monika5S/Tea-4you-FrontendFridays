@@ -18,8 +18,41 @@ p {
   margin: 0;
 }
 
-h1 {
-  font-weight: bold;
+h1,
+.price {
+  font-family: 'Lemon',
+    cursive;
+}
+
+h2,
+p {
+  font-family: 'Lemonada',
+    cursive;
+}
+
+
+
+.item-indicator {
+  position: absolute;
+  top: 65px;
+  color: cornflowerblue;
+}
+
+.product {
+  padding: 60px 160px;
+}
+
+.img-container img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.similar-products img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .banner,
@@ -36,35 +69,76 @@ h1 {
   background: #ecdff2;
 }
 
-.product .name {
+.product .name,
+.name-sm {
   color: #b367d7;
 }
 
 .price {
-  font-size: 48px;
+  font-size: 36px;
 }
 
-.pos-md {
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.name,
+.name-sm,
+.description,
+.description-sm {
+  line-height: 2;
+}
+
+.description,
+.description-sm {
+  margin-top: 35px;
+  font-size: 16px;
+}
+
+.name-sm,
+.description-sm {
+  display: none;
+}
+
+.name,
+.description {
   display: block;
 }
 
-.pos-sm {
-  display: block;
+.cart:hover,
+.fa-minus:hover,
+.fa-plus:hover {
+  transition: ease-in 200ms;
+  background-color: #943bbd;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .cart p {
     font-size: 14px;
   }
+
   .price {
     font-size: 28px;
   }
 
-  .pos-md {
+  .product {
+    padding: 60px;
+  }
+}
+
+@media(max-width:576px) {
+
+  .name,
+  .description {
     display: none;
   }
 
-  .pos-sm {
+  .name-sm,
+  .description-sm {
     display: block;
   }
 }
