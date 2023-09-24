@@ -119,6 +119,11 @@ a:hover {
   cursor: pointer;
 }
 
+.credit {
+  font-size: small;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .cart p {
     font-size: 14px;
@@ -130,5 +135,11 @@ a:hover {
 
   .product {
     padding: 60px;
+  }
+}
+
+@media(max-width:456px) {
+  .product {
+    padding: 30px;
   }
 }
